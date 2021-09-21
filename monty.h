@@ -37,7 +37,10 @@ typedef struct instruction_s
         void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-void add(stack_t **head);
+void _add(stack_t **head);
+void _swap(stack_t **head);
+void _pop(stack_t **head);
+void _pint(stack_t **head);
 size_t dlistint_len(const stack_t *h);
 size_t print_dlistint(const stack_t *h);
 int delete_dnodeint_at_index(stack_t **head, unsigned int index);

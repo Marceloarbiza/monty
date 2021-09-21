@@ -12,7 +12,15 @@ int main(void)
     add_dnodeint(&head, 5);
     add_dnodeint(&head, 6);
     add_dnodeint(&head, 7);
-    add(&head);
+    _add(&head);
+    _swap(&head);
+    _pop(&head);
     print_dlistint(head);
+    printf("PINT:");
+    _pint(&head);
+    _pop(&head);
+    print_dlistint(head);
+    printf("PINT:");
+    _pint(&head);
     return (EXIT_SUCCESS);
 }
