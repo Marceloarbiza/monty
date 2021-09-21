@@ -1,5 +1,50 @@
 #include "monty.h"
 
+/**
+ * add_dnodeint - add node beginning
+ * @head: head
+ * @n: int
+ * Return: struct
+ */
+stack_t *_push(stack_t **head, const int n)
+{
+	stack_t *new = (stack_t *)malloc(sizeof(stack_t));
+	if (new == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		new->n = n;
+		new->next = *head;
+		new->prev = NULL;
+		if (*head)
+		{
+			(*head)->prev = new;
+		}
+			*head = new;
+	}
+	return (new);
+}
+
+/**
+  * print_dlistint - print double linked list
+  * @h: head list
+  * Return: size_t
+  */
+size_t _pall(const stack_t *h)
+{
+	size_t count = 0;
+
+	while (h)
+	{
+		printf("%d\n", h->n);
+		count++;
+		h = h->next;
+	}
+	return (count);
+}
+
 void _add(stack_t **head)
 {
 	size_t lenh = dlistint_len(*head);
