@@ -48,38 +48,3 @@ int delete_dnodeint_at_index(stack_t **head, unsigned int index)
 	free(nodo);
 	return (1);
 }
-
-size_t print_dlistint(const stack_t *h)
-{
-	size_t count = 0;
-
-	while (h)
-	{
-		printf("%d\n", h->n);
-		count++;
-		h = h->next;
-	}
-	return (count);
-}
-
-stack_t *add_dnodeint(stack_t **head, const int n)
-{
-	 stack_t *new = (stack_t *)malloc(sizeof(stack_t));
-	if (new == NULL)
-	{
-		return (NULL);
-	}
-	else
-	{
-		new->n = n;
-		new->next = *head;
-		new->prev = NULL;
-		if (*head)
-		{
-			(*head)->prev = new;
-		}
-			*head = new;
-	}
-	return (new);
-}
-

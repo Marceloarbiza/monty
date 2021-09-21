@@ -20,7 +20,9 @@ int main(void)
     _pint(&head);
     _pop(&head);
     _pall(head);
+    _sub(&head);
     printf("PINT:");
     _pint(&head);
+    _pall(head);
     return (EXIT_SUCCESS);
 }

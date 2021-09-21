@@ -38,6 +38,7 @@ typedef struct instruction_s
 } instruction_t;
 
 void _add(stack_t **head);
+void _sub(stack_t **head);
 void _swap(stack_t **head);
 void _pop(stack_t **head);
 void _pint(stack_t **head);
