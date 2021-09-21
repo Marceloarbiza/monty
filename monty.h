@@ -41,6 +41,7 @@ void _add(stack_t **head);
 void _sub(stack_t **head);
 void _div(stack_t **head);
 void _mul(stack_t **head);
+void _mod(stack_t **head);
 void _swap(stack_t **head);
 void _pop(stack_t **head);
 void _pint(stack_t **head);

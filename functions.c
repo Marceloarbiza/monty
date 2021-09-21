@@ -172,3 +172,26 @@ void _mul(stack_t **head)
 		delete_dnodeint_at_index(head, 0);
 	}
 }
+
+void _mod(stack_t **head)
+{
+	size_t lenh = dlistint_len(*head);
+
+	if (lenh < 2)
+	{
+		printf("L<line_number>: can't mod, stack too short\n");
+		exit (EXIT_FAILURE);
+	}
+
+	if ((*head)->n == 0)
+	{
+		printf("L<line_number>: division by zero\n");
+		exit (EXIT_FAILURE);
+	}
+
+	if (*head && (*head)->next)
+	{
+		(*head)->next->n %= (*head)->n;
+		delete_dnodeint_at_index(head, 0);
+	}
+}
