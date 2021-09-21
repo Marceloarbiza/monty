@@ -23,6 +23,14 @@ int main(void)
     _sub(&head);
     printf("PINT:");
     _pint(&head);
+    _push(&head, 28);
+    _push(&head, 7);
+    _pall(head);
+    _div(&head);
+    printf("__\n");
+    _pall(head);
+    _mul(&head);
+    printf("__\n");
     _pall(head);
     return (EXIT_SUCCESS);
 }
