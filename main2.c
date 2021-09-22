@@ -62,7 +62,7 @@ int main(void)
     _pop(&head);
     _pop(&head);*/
     _pall(head);
-    _rotr(&head);
+    _rotl(&head);
     printf("----\n");
     _pall(head);
     return (EXIT_SUCCESS);

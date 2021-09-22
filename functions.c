@@ -250,7 +250,7 @@ void _rotr(stack_t **head)
 	int ntmp = 0, ftmp = 0;
 	stack_t *tmp = *head;
 	
-	if(*head)
+	if (*head)
 	{
 		ntmp = (*head)->n;
 
@@ -262,5 +262,24 @@ void _rotr(stack_t **head)
 		ftmp = tmp->n;
 		tmp->n = ntmp;
 		(*head)->n = ftmp;
+	}
+}
+
+void _rotl(stack_t **head)
+{
+	int ntmp = 0;
+	stack_t *tmp = *head;
+
+	if (*head)
+	{
+		ntmp = (*head)->n;
+
+		while (tmp->next)
+		{
+			tmp = tmp->next;
+			tmp->prev->n = tmp->n;
+		}
+
+		tmp->n = ntmp;
 	}
 }

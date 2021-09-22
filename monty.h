@@ -47,6 +47,7 @@ void _pop(stack_t **head);
 void _pint(stack_t **head);
 void _pchar(stack_t **head);
 void _pstr(stack_t **head);
+void _rotl(stack_t **head);
 void _rotr(stack_t **head);
 stack_t *_push(stack_t **head, const int n);
 size_t _pall(const stack_t *h);
