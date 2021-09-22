@@ -9,6 +9,12 @@ int main(void)
     _push(&head, 2);
     _push(&head, 3);
     _push(&head, 4);
+    _push(&head, 5);
+    _push(&head, 6);
+    _push(&head, 7);
+    _push(&head, 8);
+    _push(&head, 9);
+    _push(&head, 0);
 /*    _push(&head, 110);
     _push(&head, 0);
     _push(&head, 108);
@@ -56,8 +62,8 @@ int main(void)
     _pop(&head);
     _pop(&head);*/
     _pall(head);
-    _rotl(&head);
-    printf("----");
+    _rotr(&head);
+    printf("----\n");
     _pall(head);
     return (EXIT_SUCCESS);
 }

@@ -245,7 +245,7 @@ void _pstr(stack_t **head)
 	printf("\n");
 }
 
-void _rotl(stack_t **head)
+void _rotr(stack_t **head)
 {
 	int ntmp = 0, ftmp = 0;
 	stack_t *tmp = *head;
