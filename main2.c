@@ -9,6 +9,15 @@ int main(void)
     _push(&head, 2);
     _push(&head, 3);
     _push(&head, 4);
+/*    _push(&head, 110);
+    _push(&head, 0);
+    _push(&head, 108);
+    _push(&head, 111);
+    _push(&head, 111);
+    _push(&head, 104);
+    _push(&head, 99);
+    _push(&head, 83);
+
     _push(&head, 5);
     _push(&head, 6);
     _push(&head, 7);
@@ -23,7 +32,7 @@ int main(void)
     _sub(&head);
     printf("PINT:");
     _pint(&head);
-//    _push(&head, 28);
+    _push(&head, 28);
     _push(&head, 7);
     _pall(head);
     _div(&head);
@@ -36,6 +45,19 @@ int main(void)
     _push(&head, 2);
     _mod(&head);
     printf("__\n");
+    _pall(head);
+    _push(&head, 260);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);
+    _pop(&head);*/
+    _pall(head);
+    _rotl(&head);
+    printf("----");
     _pall(head);
     return (EXIT_SUCCESS);
 }
