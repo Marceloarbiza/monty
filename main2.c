@@ -65,5 +65,8 @@ int main(void)
     _rotl(&head);
     printf("----\n");
     _pall(head);
+    printf("----\n");
+    _rotr(&head);
+    _pall(head);
     return (EXIT_SUCCESS);
 }
