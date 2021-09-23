@@ -256,3 +256,9 @@ void _rotl(stack_t **head)
 		tmp->n = ntmp;
 	}
 }
+
+void _nop(stack_t **head, unsigned int line_number)
+{
+	(void)stack;
+	(void)line_number;
+}
