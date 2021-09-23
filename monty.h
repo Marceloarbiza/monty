@@ -51,6 +51,21 @@ size_t dlistint_len(const stack_t *h);
 size_t print_dlistint(const stack_t *h);
 int delete_dnodeint_at_index(stack_t **head, unsigned int index);
 stack_t *add_dnodeint(stack_t **head, const int n);
+int main(int argc, char **argv);
+void switch_s(stack_t **st, char *s, int lnum)(stack_t **, unsig\
+					       ned int);
+void free_all(stack_t **stack);
+void _close(void);
+
+/**
+ *struct save_s - file pointer and arguments
+ *@fp: file pointer
+ *@queue: 1 queue FIFO, 0 LIFO
+ */
+typedef struct save_s
+{
+	FILE *fp;
+	int queue;
+} save_s;
 
 #endif
-
