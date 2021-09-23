@@ -259,6 +259,6 @@ void _rotl(stack_t **head)
 
 void _nop(stack_t **head, unsigned int line_number)
 {
-	(void)stack;
+	(void)head;
 	(void)line_number;
 }
