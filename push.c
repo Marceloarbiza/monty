@@ -4,7 +4,7 @@
  *
  *
  */
-void push(stack_t **stack, unsigned int line_number)
+void _push(stack_t **stack, unsigned int line_number)
 {
         char arg[128] = "";
         char *arg_p = arg;

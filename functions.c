@@ -74,7 +74,7 @@ void _pint(stack_t **head)
 {
 	size_t lenh = dlistint_len(*head);
 	int npint = 0;
-	
+
 	if (lenh == 0)
 	{
 		fprintf(stderr, "L<line_number>: can't pint, stack too short\n");
@@ -222,7 +222,7 @@ void _rotr(stack_t **head)
 {
 	int ntmp = 0, ftmp = 0;
 	stack_t *tmp = *head;
-	
+
 	if (*head)
 	{
 		ntmp = (*head)->n;
