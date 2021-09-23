@@ -1,11 +1,15 @@
 #ifndef MONTY_H
 #define MONTY_H
 
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-
+#define _GNU_SOURCE
 
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
@@ -49,27 +53,30 @@ void _pchar(stack_t **head);
 void _pstr(stack_t **head);
 void _rotl(stack_t **head);
 void _rotr(stack_t **head);
-stack_t *_push(stack_t **head, const int n);
+void push(stack_t **stack, unsigned int line_number);
 size_t _pall(const stack_t *h);
 size_t dlistint_len(const stack_t *h);
 size_t print_dlistint(const stack_t *h);
 int delete_dnodeint_at_index(stack_t **head, unsigned int index);
 stack_t *add_dnodeint(stack_t **head, const int n);
 int main(int argc, char **argv);
-void switch_s(stack_t **st, char *s, int lnum)(stack_t **, unsig\
-					       ned int);
+void switch_s(stack_t **st, char *s, int lnum)(stack_t **, unsigned int);
 void free_all(stack_t **stack);
 void _close(void);
+void push_error(stack_t **stack, unsigned int line_number);
+void add_node(stack_t **stack, int argument);
+void add_node_end(stack_t **stack, int argument);
 
 /**
- *struct save_s - file pointer and arguments
- *@fp: file pointer
- *@queue: 1 queue FIFO, 0 LIFO
+ * struct global_s - file pointer and argument
+ * @fp: file pointers
+ * @queue: 0 if stack (LIFO), 1 if queue (FIFO)
  */
-typedef struct save_s
+typedef struct global_s
 {
-	FILE *fp;
-	int queue;
-} save_s;
+        FILE *fp;
+        int queue;
+} global_t;
+extern global_t global;
 
 #endif
