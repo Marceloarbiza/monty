@@ -3,7 +3,7 @@
 /**
  * _pstr - lñsdkfpñsdf,sñld,csñdl
  * @stack: dñllfidlx,sdl
- * @line_number: ñsññdpdñxñd
+ * @line_number: ñspdñxñd
  */
 void _pstr(stack_t **stack, unsigned int line_number)
 {
