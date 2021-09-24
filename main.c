@@ -1,4 +1,5 @@
 #include "monty.h"
+global_t global = {NULL, 0};
 
 /**
  * main - dfjñadfmñd
@@ -11,7 +12,6 @@ int main(int argc, char **argv)
 	char buf[1024], t[128] = "", *token = t;
 	stack_t *stack = NULL;
 	unsigned int line_number = 1;
-	global_t global = {NULL, 0};
 
 	if (argc != 2)
 	{
