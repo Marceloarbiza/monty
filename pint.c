@@ -5,7 +5,7 @@
  * @stack: lñd,apd,ñal,s
  * @line_number: kaopd,aps,capos,
  */
-void op_pint(stack_t **stack, unsigned int line_number)
+void _pint(stack_t **stack, unsigned int line_number)
 {
 	if (*stack)
 		printf("%d\n", (*stack)->n);

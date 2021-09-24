@@ -5,7 +5,7 @@
  * @stack: llsdlksdlfkñldf
  * @line_number: ñlkdfñalkñalñla
  */
-void op_pall(stack_t **stack, unsigned int line_number)
+void _pall(stack_t **stack, unsigned int line_number)
 {
 	stack_t *pp = *stack;
 	(void) line_number;
