@@ -3,7 +3,7 @@
 /**
  * _mul - ldfñal,dñal,sdñal,sñla,
  * @stack: sñdlf,ñld,cñsl,d
- * @line_number: dmfalm,cañl,scal,
+ * @line_number: dmfalm,ñl,scal,
  */
 void _mul(stack_t **stack, unsigned int line_number)
 {
