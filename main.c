@@ -1,6 +1,5 @@
 #include "monty.h"
-
-global_t global = {NULL, 0};
+/*global_t global = {NULL, 0};*/
 
 /**
  * main - dfjñadfmñd

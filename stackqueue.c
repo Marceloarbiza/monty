@@ -1,5 +1,4 @@
 #include "monty.h"
-extern global_t global;
 
 /**
  * _stack - djfkkaldñjfñadjkf
