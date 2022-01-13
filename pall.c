@@ -1,7 +1,7 @@
 #include "monty.h"
 
 /**
- * op_pall - ldlflclsp
+ * _pall - ldlflclsp
  * @stack: llsdlksdlfkñldf
  * @line_number: ñlkdfñalkñalñla
  */
